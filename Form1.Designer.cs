@@ -44,6 +44,7 @@ namespace defUnity
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblDropText = new System.Windows.Forms.Label();
+            this.gitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -64,6 +65,7 @@ namespace defUnity
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openSTUToolStripMenuItem,
+            this.gitToolStripMenuItem,
             this.выходToolStripMenuItem});
             this.fileToolStripMenuItem.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -73,14 +75,14 @@ namespace defUnity
             // openSTUToolStripMenuItem
             // 
             this.openSTUToolStripMenuItem.Name = "openSTUToolStripMenuItem";
-            this.openSTUToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.openSTUToolStripMenuItem.Text = "Найти STU";
+            this.openSTUToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.openSTUToolStripMenuItem.Text = "Найти STU в папке";
             this.openSTUToolStripMenuItem.Click += new System.EventHandler(this.openSTUToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
@@ -187,6 +189,14 @@ namespace defUnity
             this.lblDropText.Text = "Перетащите сюда папку с *.STU";
             this.lblDropText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // gitToolStripMenuItem
+            // 
+            this.gitToolStripMenuItem.Image = global::defUnity.Properties.Resources.github_mark;
+            this.gitToolStripMenuItem.Name = "gitToolStripMenuItem";
+            this.gitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gitToolStripMenuItem.Text = "git";
+            this.gitToolStripMenuItem.Click += new System.EventHandler(this.gitToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -229,6 +239,7 @@ namespace defUnity
         private System.Windows.Forms.DataGridViewTextBoxColumn Version;
         private System.Windows.Forms.DataGridViewTextBoxColumn filepath;
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gitToolStripMenuItem;
     }
 }
 

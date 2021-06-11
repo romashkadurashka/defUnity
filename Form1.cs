@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.IO.Compression;
@@ -175,6 +176,11 @@ namespace defUnity
         {
             About formAbout = new About();
             formAbout.Show();
+        }
+
+        private void gitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/romashkadurashka/defUnity/releases");
         }
     }
 }
